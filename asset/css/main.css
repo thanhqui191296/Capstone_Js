@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #85FFBD;
+  background-image: linear-gradient(270deg, #85FFBD 0%, #FFFB7D 100%);
+}
+
+header .navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+header .nav_right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+header .navbar-toggler {
+  color: #121212;
+  font-size: 16px;
+  font-weight: 300;
+}
+header #cyberShoes .nav-link {
+  color: #121212;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 20px;
+}
+header #cyberShoes .navbar-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+header .navbar-brand {
+  color: #121212;
+  font-size: 40px;
+  font-weight: 400;
+}
+header #gioHang {
+  height: 41px;
+  color: #28a745;
+}
+header .form-inline {
+  position: relative;
+}
+header .form-inline .form-control {
+  width: auto;
+  display: inline-block;
+  padding: 20px;
+}
+header .form-inline .search__icon {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 27px;
+  font-size: #B3FFAB 16px;
+}/*# sourceMappingURL=main.css.map */

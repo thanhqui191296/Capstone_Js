@@ -1,0 +1,51 @@
+header {
+    .navbar{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .nav_right{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .navbar-toggler {
+        @include textSize($color-7, $fs-1, $fw-1);
+    }
+    #cyberShoes{
+        .nav-link{
+            @include textSize($color-7, $fs-1, $fw-1);
+            padding: $pd-2;
+        }
+        .navbar-nav{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+    .navbar-brand{
+        @include textSize ($color-7, $fs-3, $fw-2)
+    }
+    
+
+
+    #gioHang {
+       
+        height: $fs-3 + 1;
+        color: $color-1;
+    }
+    .form-inline{
+        position: relative;
+        .form-control{
+            width: auto;
+            display: inline-block;
+            padding: $pd-2;
+        }
+        .search__icon{
+            cursor: pointer;
+            position: absolute;
+            right: 20px;
+            top: 27px;
+            font-size: $color-3$fs-1;
+        }
+    }
+    
+}
