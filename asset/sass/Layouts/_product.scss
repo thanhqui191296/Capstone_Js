@@ -1,0 +1,21 @@
+#product-img img{
+    width: 100%
+    
+}
+.shoe-product {
+    box-shadow: 6px 6px 12px $color-5,
+    -6px -6px 12px $color-4,;
+    padding: 15px;
+    box-sizing: border-box;
+    background:$color-6;
+    border-radius: $boder-1;
+}
+.shoe-card{
+    padding: 15px;
+}
+.product-infor{
+    @include textSize($color-4,$fs-1,$fw-2)
+}
+.shoe-price p{
+    @include textSize($color-1,$fs-2,$fw-3)
+}

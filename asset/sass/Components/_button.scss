@@ -1,0 +1,14 @@
+.shoebtn-button {
+    @include styleButton(
+        $pd-1,
+        $pd-2 + 5,
+        $background-1,
+        2px solid $background-1,
+        $boder-1,
+    );
+    transition: all ease-in-out 0.2s;
+    @include textSize($color-4, $fs-1, $fw-2);
+    &:hover{
+       background-color: $background-2;
+    }
+}

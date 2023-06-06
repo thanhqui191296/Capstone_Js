@@ -7,8 +7,20 @@
 html,
 body {
   font-family: "Inter", sans-serif;
-  background-color: #85FFBD;
-  background-image: linear-gradient(270deg, #85FFBD 0%, #FFFB7D 100%);
+}
+
+.shoebtn-button {
+  padding: 10px 25px;
+  background-color: #24b4fb;
+  border: 2px solid #24b4fb;
+  border-radius: 10px;
+  transition: all ease-in-out 0.2s;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+}
+.shoebtn-button:hover {
+  background-color: #0071e2;
 }
 
 header .navbar {
@@ -41,7 +53,7 @@ header .navbar-brand {
 }
 header #gioHang {
   height: 41px;
-  color: #28a745;
+  color: #FF6000;
 }
 header .form-inline {
   position: relative;
@@ -57,4 +69,54 @@ header .form-inline .search__icon {
   right: 20px;
   top: 27px;
   font-size: #B3FFAB 16px;
+}
+
+.carouselShoe {
+  background-color: #121212;
+}
+.carouselShoe .carouselIfor {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+}
+.carouselShoe #carouselExampleCaptions .carousel-indicators li {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}
+.carouselShoe .img-fuild {
+  max-width: 100%;
+  height: auto;
+}
+.carouselShoe .carouselIMG img {
+  width: 100%;
+}
+
+#product-img img {
+  width: 100%;
+}
+
+.shoe-product {
+  box-shadow: 6px 6px 12px #bebebe, -6px -6px 12px #FFFFFF;
+  padding: 15px;
+  box-sizing: border-box;
+  background: #454545;
+  border-radius: 10px;
+}
+
+.shoe-card {
+  padding: 15px;
+}
+
+.product-infor {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.shoe-price p {
+  color: #FF6000;
+  font-size: 20px;
+  font-weight: 600;
 }/*# sourceMappingURL=main.css.map */

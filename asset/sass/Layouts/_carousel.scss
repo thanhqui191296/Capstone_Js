@@ -1,0 +1,23 @@
+.carouselShoe {
+   background-color: $color-7;
+    
+    .carouselIfor {
+        @include textSize($color-4, $fs-1, $fw-2);
+    }
+    #carouselExampleCaptions {
+        .carousel-indicators li {
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            margin: $mg-1;
+        }
+        
+    }
+    .img-fuild {
+        max-width: 100%;
+        height: auto;
+    }
+    .carouselIMG img{
+        width: 100%;
+    }
+}
