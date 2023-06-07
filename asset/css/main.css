@@ -72,7 +72,7 @@ header .form-inline .search__icon {
 }
 
 .carouselShoe {
-  background-color: #121212;
+  background-color: #bebebe;
 }
 .carouselShoe .carouselIfor {
   color: #FFFFFF;
@@ -85,12 +85,24 @@ header .form-inline .search__icon {
   height: 20px;
   margin: 10px;
 }
-.carouselShoe .img-fuild {
-  max-width: 100%;
-  height: auto;
+
+.service__item {
+  text-align: center;
 }
-.carouselShoe .carouselIMG img {
-  width: 100%;
+
+.shoe-carousel-img img {
+  display: inline-block;
+  max-width: 100%;
+}
+
+.shoe-carousel-qui {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+}
+
+.shoe-carousel-qui img {
+  width: 50%;
 }
 
 #product-img img {

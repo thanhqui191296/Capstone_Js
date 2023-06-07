@@ -1,5 +1,5 @@
 .carouselShoe {
-   background-color: $color-7;
+   background-color: $color-5;
     
     .carouselIfor {
         @include textSize($color-4, $fs-1, $fw-2);
@@ -11,13 +11,20 @@
             height: 20px;
             margin: $mg-1;
         }
-        
     }
-    .img-fuild {
-        max-width: 100%;
-        height: auto;
-    }
-    .carouselIMG img{
-        width: 100%;
-    }
+}
+.service__item{
+    text-align: center;
+}
+.shoe-carousel-img img{
+    display: inline-block;
+    max-width: 100%;
+}
+.shoe-carousel-qui{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+}
+.shoe-carousel-qui img{
+    width: 50%;
 }
