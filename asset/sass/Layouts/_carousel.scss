@@ -1,6 +1,6 @@
 .carouselShoe {
-   background-color: $color-5;
-    
+    background-color: $color-5;
+
     .carouselIfor {
         @include textSize($color-4, $fs-1, $fw-2);
     }
@@ -13,18 +13,59 @@
         }
     }
 }
-.service__item{
+.service__item {
     text-align: center;
 }
-.shoe-carousel-img img{
+.shoe-carousel-img img {
     display: inline-block;
     max-width: 100%;
 }
-.shoe-carousel-qui{
+.shoe-carousel-qui {
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: center;
 }
-.shoe-carousel-qui img{
+.shoe-carousel-qui img {
     width: 50%;
+}
+.sanpham__carousel {
+    .carousel__left__size li {
+        padding: 10px 10px;
+        background: $color-10;
+        display: inline;
+        list-style: none;
+        text-decoration: none;
+        border: 1px solid $color-2;
+    }
+    .carousel__left__pirce {
+        color: $color-1;
+        font-size: $fs-2;
+        font-weight: $fw-4;
+        display: inline;
+    }
+    .carousel__left__pirce p {
+        margin-bottom: 0;
+        display: inline;
+        color: $color-7;
+    }
+    .carousel__left__soluong {
+        margin: 10px 0;
+        font-size: $fs-2;
+    }
+    .carousel__left__soluong i {
+        .fa-solid{
+            font-size: $fs-1;
+        color: $color-10;
+        }
+        
+    }
+    .carousel__left__soluong {
+        .btn-group {
+            background: $background-1;
+            border: 2px solid $background-1;
+            &:hover {
+                background-color: $background-2;
+            }
+        }
+    }
 }
