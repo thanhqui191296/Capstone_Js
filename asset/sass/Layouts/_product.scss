@@ -19,3 +19,8 @@
 .shoe-price p{
     @include textSize($color-1,$fs-2,$fw-3)
 }
+.product_tittle h1{
+    @include textSize($color-1,$fs-5,$fw-4);
+    text-align: center;
+    
+}

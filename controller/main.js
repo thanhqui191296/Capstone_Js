@@ -39,4 +39,34 @@ function hienThiTable(data){
     `;
     listSP.innerHTML += productHTML
   })
+};
+function xemSanPham(ma){
+  axios({
+    method: 'get',
+    url: `https://shop.cyberlearn.vn/api/Product/getbyid?id=${ma}`,
+  }).then(function (result) {
+    document.getElementById("txtTenSanPham").value = result.data.name;
+    document.getElementById("txtThongTin").value = result.data.description;
+    document.getElementById("txtSize").value = result.data.size;
+    document.getElementById("txtPrice").value = result.data.price;
+  }).catch(function (error) {
+    console.log(error)
+  });
+}
+function dangNhap(){
+  var email = document.getElementById("txtEmail").value;
+  var tenDangNhap = document.getElementById("txtName").value;
+  var matKhau = document.getElementById("txtPass").value;
+  var passCofirm = document.getElementById("txtPassCofirm").value;
+  var sdt = document.getElementById("txtPhone").value;
+  var signup = new DangNhap(email,matKhau,tenDangNhap,sdt,passCofirm)
+  axios({
+    method:'POST',
+    url:'https://shop.cyberlearn.vn/api/Users/signup',
+  }).then(function(result){
+    alert("Đăng nhập thành công")
+    dangNhap()
+  }).catch(function(error){
+    
+  });
 }
