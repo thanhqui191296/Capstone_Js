@@ -14,35 +14,35 @@
             <form action="#">
                 <h1>Create Account</h1>
                 <span>or use your email for registration</span>
-                <input type="text" id="txtName" placeholder="Name" />
-                <input type="email" id="txtEmail" placeholder="Email" />
-                <input type="password" id="txtPass" placeholder="Password" />
-                <input type="password" id="txtPassCofirm" placeholder="Password confirm" />
-                <input type="number" id="txtPhone" placeholder="Phone">
+                <input type="text" id="txtName" placeholder="Name" minlength="2" maxlength="50"/>
+                <input type="email" id="txtEmail" placeholder="Email"  required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+                <input type="password" id="txtPass" placeholder="Password" required minlength="6" maxlength="20"/>
+                <input type="password" id="txtPassCofirm" placeholder="Password confirm"  required minlength="6" maxlength="20" />
+                <input type="tel" id="txtPhone" placeholder="Phone" required pattern="[0-9]{10,11}">
                 <ul class="shoe-signup">
                   <li class="type">
-                    <input type="radio" name="selector" id="male">
+                    <input type="radio" name="gender" id="male" value="male">
                     <label for="male">Male</label>
                     <div class="check"></div>
                   </li>
                   <li class="type">
-                    <input type="radio" name="selector" id="female">
+                    <input type="radio" name="gender" id="female" value="female">
                     <label for="female">Female</label>
                     <div class="check"></div>
                   </li>
                 </ul>
                 <div class="clear:both;"></div>
-                <button>Sign Up</button>
+                <button type="submit" onclick="dangKy()">Sign Up</button>
             </form>
         </div>
         <div class="form-container sign-in-container">
             <form action="#">
                 <h1>Sign in</h1>
                 <span>or use your account</span>
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
+                <input type="email"  id="txtName" placeholder="Email" />
+                <input type="password"  id="txtPass"  placeholder="Password" />
                 <a href="#">Forgot your password?</a>
-                <button>Sign In</button>
+                <button type="submit" onclick="dangNhap()">Sign In</button>
             </form>
         </div>
         <div class="overlay-container">
@@ -75,5 +75,7 @@
             container.classList.remove('right-panel-active');
         });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="../controller/main.js"></script>
 </body>
 </html>
